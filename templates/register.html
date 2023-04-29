@@ -1,0 +1,63 @@
+{% extends 'common_layout.html' %}
+{% load static %}
+{% block content %}     
+<script>
+    {% if msg %}
+    alert('{{msg}}');
+    {% endif %}
+</script>
+<div class="row" id="main" style="height:1000px;"> 
+    <h1 style="text-align:center">Register Here</h1>
+    <div class="row" style="margin:30px 0px 30px 0px; ">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6" style="border:2px solid lightgreen;padding:20px 20px 20px 20px">
+            <form action="/common/saveRegister/" method="post">
+               {% csrf_token %}
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Name</label>
+                <input class="form-control" type="text" name="uname"/>
+            </div>
+            <div class="mb-3">
+                <label for="ugender" class="form-label">Gender &emsp;</label>
+                <input class="form-check-input" type="radio" value="male" name="ugender"/> Male &nbsp;
+                <input class="form-check-input" type="radio" value="female" name="ugender"/> Female
+            </div>
+            <div class="mb-3">
+                <label for="uemail" class="form-label">Email</label>
+                <input class="form-control" type="email" name="uemail"/>
+            </div> 
+            
+            <div class="mb-3">
+                <label for="ucourse" class="form-label">Course</label>
+                <select class="form-select" name="ucourse">
+                    <option selected>---Select---</option>
+                    <option Value="BTech">BTech</option>
+                    <option Value="MTech">MTech</option>
+                    <option Value="BSC">BSC</option>
+                    <option Value="MSC">MSC</option>
+                    <option Value="BCA">BCA</option>
+                    <option Value="MCA">MCA</option>
+                </select>
+            </div> 
+    
+            <div class="mb-3">
+                <label for="uaddress" class="form-label">Address</label>
+                <textarea class="form-control"  name="uaddress" rows="5" colls="15"> </textarea>
+            </div> 
+    
+            <div class="mb-1 " >
+                <center>
+                <input class="btn btn-success btn-lg" style="width:170px" type="submit" Value="Submit"/>
+                &emsp;
+                <input class="btn btn-primary btn-lg" style="width:170px" type="reset" Value="Reset"/>
+                </center>
+            </div> 
+    
+        </form>
+        </div>
+        <div class="col-sm-3"></div>
+        
+</div>
+    {% endblock content %}
+
+           

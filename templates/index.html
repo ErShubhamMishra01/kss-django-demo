@@ -1,0 +1,87 @@
+{% extends 'common_layout.html' %}
+{% load static %}
+            {% block content %}
+            <div class="row" id="slider">
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="padding:0px">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 2"></button>
+                    
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="{% static 'slide_img/img1.jpg' %}" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Welcome to KSS</h5>
+                        <p>Thanks for joining this session.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="{% static 'slide_img/img2.jpg' %}" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="{% static 'slide_img/img3.jpg' %}" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="{% static 'slide_img/img4.jpg' %}" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+          </div>
+          
+            <div class="row" id="main" style="height:1000px;">
+              <div class="row" >
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6" style="font-size:20px;">
+                  <h1 style="text-align:center">Important Links</h1>
+                  <ul>
+                   <li> <a href="/static/doc/Python by KSS.pptx.pdf">Python PPT doc</a></li>
+                   <li> <a href="/static/doc/Raspberry Pi PPT.pptx.pdf">Raspberry Pi PPT doc</a></li>
+                   <li> <a href="/static/doc/Django.pdf">Django PPT doc</a></li>
+                   <li> <a href="/static/doc/Jenkins DevOps.pptx.pdf">Jenkins (Automation Tool) PPT doc</a></li>
+                   <li> <a href="">Django Demo project code (github)</a></li><br/>
+                   <li> <a href="https://youtu.be/Asp3pDGw8VE" style="color:green">KSS students feedback video</a></li>
+                   <li> <a href="https://youtu.be/uencspdWSFI" style="color:green">KSS video by national media</a></li>
+                   <li> <a href="https://www.mykss.in" >KSS website</a></li>
+                   <li> <a href="/static/doc/KSS Booklet (Syllabus) 2023.pdf" >Training Syllabus</a></li>
+                   <li> <a href="/static/doc/Recent Placement Records 2023.pdf">Recent Training Feedback doc</a></li>
+                   <li> <a href="/static/doc/KSS-Registration_Process.pdf">Registration Process</a></li>
+                   <li> <a href="https://www.mykss.in/KSS/Register" style="color:green">Registration link</a></li><br/>
+                   <li> <a href="https://wa.me/message/5XZHRO2X75LMI1" >Whats App chat with Er. Shubham Mishra (+9713161487) </a></li>
+                   <li> <a href="https://wa.me/+918471054381">Whats app chat with KSS Team (Traiining department)</a></li>
+                   <li> <a href="https://wa.me/+917651964476">Whats app chat with KSS Team (Senior Member)</a></li>
+                   
+                   <li> <b>Do you have any query..?</b> we are just one call away.... &nbsp; &nbsp;<br/> +917651964476, +918471054381</li>
+                    
+                  </ul>
+                </div>
+                <div class="col-sm-3"></div>
+              </div>
+              
+            </div>
+            
+            {% endblock content %}
+
+           
